@@ -9,7 +9,7 @@ COPY . /app
 
 # Install Java and other dependencies
 RUN apt-get update && \ 
-    apt-get install -y openjdk-11-jre-headless && \
+    apt-get install -y openjdk-11-jre-headless xvfb && \
     npm install
 
 # Set environment variables or additonal configuration if needed
